@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#"
+     xml:base="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Advogado_chefe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Advogado_chefe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Escritório_de_Direito"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Advogados -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Advogados">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Advogado_chefe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Bibliotecario_chefe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Bibliotecario_chefe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Escritório_de_Direito"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Brenda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Brenda"/>
+    
+
+
+    <!-- http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Escritório_de_Direito -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Escritório_de_Direito">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Brenda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Estagiario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Estagiario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Bibliotecario_chefe"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#arquiva_documentos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#arquiva_documentos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Bibliotecario_chefe"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Estagiario"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#cria_pastas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#cria_pastas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Bibliotecario_chefe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#distribui_processos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#distribui_processos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Advogado_chefe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#modifica_pastas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#modifica_pastas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Bibliotecario_chefe"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Estagiario"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#visualiza_pastas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#visualiza_pastas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Advogado_chefe"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Advogados"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Bibliotecario_chefe"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/brenda/ontologies/2018/11/untitled-ontology-7#Estagiario"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
